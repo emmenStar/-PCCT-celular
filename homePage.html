@@ -1,155 +1,166 @@
-<!DOCTYPE html> 
- <html lang="pt - br"> 
-  
- <head> 
-   <meta charset="=UTF-8"> 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <meta http-equiv="X-UA-Compatible" contaent="IE=edge"> 
-   <meta name="viewport" content="whidth=device-whidth, initial-scale=1.0"> 
-   <title>Good.pet</title> 
-   <link rel="stylesheet" href="homePage2.css"> 
-   <link rel="stylesheet" href="card.css"> 
-   <link rel="stylesheet" href="cadastro.html"> 
-   <link rel="stylesheet" href="carrossel.css"> 
- </head> 
-  
-  <!-- comecei o cabeçalho -->
- <body> 
-   <header meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <nav> 
-     <!-- adicionando a logo-->
-       <a class="logo" href=""> 
-         <img src="Logo.png"  width="70" height="60"><a> 
-  
-       <div class="mobile-menu"> 
-         <div class="line1"></div> 
-         <div class="line2"></div> 
-         <div class="line3"></div> 
-       </div> 
-       
- <!-- adicionando o cabeçalho de navegação-->
-       <ul class="nav-list"> 
-         <li><a href="homePage.html">HOME</a></li> 
-         <li><a href="sobre.html">SOBRE</a></li> 
-         <li><a href="perdios.html">PERDIDOS</a></li> 
-         <li><a href="adoção.html">ADOÇÃO</a></li> 
-         <li><a href="contato.html">CONTATO</a></li> 
-       </ul> 
-       
-       <!--perfil do usuário-->
-       
-       <a class="perfil" href="perfil.html"> 
-        <img src="usuario.png"  width="70" height="70"></a>
-         
-         </div>
-       </div>
-     </nav> 
-   </header> 
-   
-   <!--carrossel com os botões-->
-   <div class="div-slider">
-  <ul class="slides-front">
-    <input type="radio" name="radio-btn" id="img-1" checked="">
-    <li class="slide-container">
-    <div class="slide">
-      <img src="carrossel.png">
-        </div>
-        
-    <div class="nav">
-      <label for="img-3" class="prev">‹</label>
-      <label for="img-2" class="next">›</label>
-    </div>
-    </li>
+<!DOCTYPE html>
+<html lang="pt - br">
 
-    <input type="radio" name="radio-btn" id="img-2">
-    <li class="slide-container">
+<head>
+  <meta charset="=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" contaent="IE=edge">
+  <meta name="viewport" content="whidth=device-whidth, initial-scale=1.0">
+  <title>Good.pet</title>
+  <link rel="stylesheet" href="homePage2.css">
+  <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="cadastro.html">
+  <link rel="stylesheet" href="carrossel.css">
+</head>
+
+<!-- comecei o cabeçalho -->
+
+<body>
+  <header meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <nav>
+      <!-- adicionando a logo-->
+      <a class="logo" href="">
+        <img src="Logo.png" width="70" height="60"><a>
+
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+
+          <!-- adicionando o cabeçalho de navegação-->
+          <ul class="nav-list">
+            <li><a href="homePage.html">HOME</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="perdios.html">PERDIDOS</a></li>
+            <li><a href="adoção.html">ADOÇÃO</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+          </ul>
+
+          <!--perfil do usuário-->
+
+          <a class="perfil" href="perfil.html">
+            <img src="usuario.png" width="70" height="70"></a>
+
+          </div>
+          </div>
+    </nav>
+  </header>
+
+  <!--carrossel com os botões-->
+  <div class="div-slider">
+    <ul class="slides-front">
+      <input type="radio" name="radio-btn" id="img-1" checked="">
+      <li class="slide-container">
+        <div class="slide">
+          <img src="carrossel.png">
+        </div>
+
+        <div class="nav">
+          <label for="img-3" class="prev">‹</label>
+          <label for="img-2" class="next">›</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-2">
+      <li class="slide-container">
         <div class="slide">
           <img src="">
         </div>
-        
-    <div class="nav">
-      <label for="img-1" class="prev">‹</label>
-      <label for="img-3" class="next">›</label>
-    </div>
-    </li>
-    
-    <input type="radio" name="radio-btn" id="img-3">
-    <li class="slide-container">
+
+        <div class="nav">
+          <label for="img-1" class="prev">‹</label>
+          <label for="img-3" class="next">›</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-3">
+      <li class="slide-container">
         <div class="slide">
           <img src="">
         </div>
-        
-    <div class="nav">
-      <label for="img-2" class="prev">‹</label>
-      <label for="img-1" class="next">›</label>
+
+        <div class="nav">
+          <label for="img-2" class="prev">‹</label>
+          <label for="img-1" class="next">›</label>
+        </div>
+      </li>
+
+      <li class="nav-dots">
+        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <!--Cards-->
+  <main class="cards">
+    <section class="card contact">
+      <div class="icon">
+        <img src="Dog borboleta.jpg" alt="Contact us." style="border-radius: 10px"></img>
+      </div>
+      <h3>Adote um pet</h3>
+      <span>Escolha e conheça seu novo amiguinho</span>
+      <button>mais sobre</button>
+    </section>
+    <section class="card shop">
+      <div class="icon">
+        <img src="Dog olhos.jpg" alt="Shop here.">
+      </div>
+      <h3>pets perdidos</h3>
+      <span>Aqui você poderá visualizar os pets que estão perdidos</span>
+      <button>mais sobre</button>
+    </section>
+    <section class="card about">
+      <div class="icon">
+        <img src="Dog lingua.jpg" alt="About us.">
+      </div>
+      <h3>salve pets</h3>
+      <span>Salve o pets de rua</span>
+      <button>mais sobre</button>
+    </section>
+    <section class="card shop">
+      <div class="icon">
+        <img src="Dog olhos.jpg" alt="Shop here.">
+      </div>
+      <h3>pets perdidos</h3>
+      <span>Aqui você poderá visualizar os pets que estão perdidos</span>
+      <button>mais sobre</button>
+
+
+  </main>
+  </div>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <div class="label">
+      <img src="caminho_para_a_imagem.jpg" alt="Foto">
+      <h1>aaaa</h1>
+      <p>Texto da label</p>
+      <br>
+      <br>
     </div>
-    </li>
-    
-    <li class="nav-dots">
-      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-    </li>
-  </ul>
-</div>
 
-
-     
-     <!--Cards-->
-<main class="cards">
-        <section class="card contact">
-            <div class="icon">
-                <img src="Dog borboleta.jpg" alt="Contact us." style="border-radius: 10px"></img>
-            </div>
-            <h3>Adote um pet</h3>
-            <span>Escolha e conheça seu novo amiguinho</span>
-            <button>mais sobre</button>
-        </section>
-        <section class="card shop">
-            <div class="icon">
-                <img src="Dog olhos.jpg" alt="Shop here.">
-            </div>
-            <h3>pets perdidos</h3>
-            <span>Aqui você poderá visualizar os pets que estão perdidos</span>
-            <button>mais sobre</button>
-            <
-        </section>
-        <section class="card about">
-            <div class="icon">
-                <img src="Dog lingua.jpg" alt="About us.">
-            </div>
-            <h3>salve pets</h3>
-            <span>Salve o pets de rua</span>
-            <button>mais sobre</button>
-        </section>
-    </main>
-   </div> 
-   </div> 
-<br>
-<br>
-<div class="container">
-<div class="label">
-  <img src="caminho_para_a_imagem.jpg" alt="Foto">
-  <h1>aaaa</h1>
-  <p>Texto da label</p>
-  <br>
-  <br>
+    <div class="label">
+      <img src="caminho_para_a_imagem.jpg" alt="Foto">
+      <h1>aaaa</h1>
+      <p>Texto da label</p>
+    </div>
   </div>
 
-<div class="label">
-  <img src="caminho_para_a_imagem.jpg" alt="Foto">
-  <h1>aaaa</h1>
-  <p>Texto da label</p>
-  </div>
+</body>
+
+</html>
 </div>
 
- </body> 
- </html> 
- </div> 
- 
- </body> 
- </html>
- 
+</body>
+
+</html>
+
 <br>
 <br>
 <!-- rodapé html-->
@@ -164,29 +175,30 @@
 
 
 <style>
-.container{
-  
-  display: flex;
-  flex-direction: column;
-}
-.label {
+  .container {
 
-  border: 2px solid #000;
-  background: #9AD6CE;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 900px;
-  height: 200px;
-  margin: auto;
- margin-bottom:20px;
- 
-}
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label {
+
+    border: 2px solid #000;
+    background: #9AD6CE;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+
+  }
 
 
-/*rodapé*/
+  /*rodapé*/
   footer {
     background-color: #9AD6CE;
     color: #fff;
@@ -216,5 +228,3 @@
     text-decoration: none;
   }
 </style>
-
-
