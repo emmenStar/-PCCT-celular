@@ -37,6 +37,7 @@ a {
 
 
 nav {
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -47,6 +48,7 @@ nav {
 }
 
 .nav-list {
+  margin: auto;
   list-style: none;
   display: flex;
   text-decoration: none;
@@ -54,13 +56,15 @@ nav {
 
 .nav-list li {
 
-  letter-spacing: 3px;
-  margin-left: 32px;
+  margin: auto;
+  /*letter-spacing: 3px;*/
+  margin-left: 30px;
   list-style: none;
   text-decoration: none;
 }
 
 a.button {
+  letter-spacing: 2px;
   display: inline-block;
   padding: 15px 20px;
   border-radius: 35px;
@@ -92,11 +96,13 @@ h1 {
   text-align: center;
 }
 
-
+/*tamanho do rodapé*/
 footer p {
   margin: 0;
-  padding: 15px 0;
+  padding: 13px 0;
 }
+
+
 
 .dropdown {
   position: relative;
@@ -189,6 +195,8 @@ input {
   background: #fff;
   transition: 0.4s;
 }
+
+
 
 .slides {
   display: flex;
@@ -365,17 +373,24 @@ main.cards section.card button {
 /*------------------- SLIDER FRONT PAGE - NOVIDADES ----------------------*/
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
+.background-div {
+
+  color: black;
+  z-index: -1;
+}
 
 .div-slider {
-  width: 1800px;
-  height: 400px;
+  margin: 0%;
+  /*width: 1800px;*/
+  height: 420px;
   text-align: center;
 
 }
 
 .slides-front {
   padding: 0;
-  width: 970px;
+  width: 980px;
+
   height: 370px;
   display: block;
   margin: auto;
