@@ -276,12 +276,11 @@ main.cards section.card {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: #9AD6CE;
   padding: 1rem 1.5rem;
   border-radius: 10px;
   max-height: 468px;
   margin-left: 32px;
-  /*background-image: url(Dog\ lingua.jpg);*/
+
 
 
 
@@ -289,26 +288,26 @@ main.cards section.card {
 
 main.cards section.card:first-child {
   margin-left: 0;
-  background-image: url(Dog\ lingua.jpg);
+  background-image: url(Dog_lingua.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 10px;
 }
 
-main.cards section.card .icon {
-  width: 50px;
-  height: 50px;
-
-}
 
 main.cards section.card img {
   width: 100%;
-  background-image: url(Dog\ lingua.jpg);
+  background-image: url("Dog_borboleta.jpg");
 }
 
 main.cards section.card shop {
-  width: 100%;
-  background-image: url(Dog\ lingua.jpg);
+  margin-left: 0;
+  background-image: url(Dog lingua.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  ;
+
 }
 
 
@@ -319,6 +318,7 @@ main.cards section.card h3 {
 }
 
 main.cards section.card span {
+
   font-weight: 300;
   max-width: 240px;
   font-size: 80%;
