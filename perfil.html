@@ -1,115 +1,99 @@
-<!DOCTYPE html> 
- <html lang="pt - br"> 
-  
- <head> 
-   <meta charset="=UTF-8"> 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <meta http-equiv="X-UA-Compatible" contaent="IE=edge"> 
-   <meta name="viewport" content="whidth=device-whidth, initial-scale=1.0"> 
-   <title>Perfil</title> 
-   <!--Claro! Aqui está um exemplo básico de como você pode criar a página de perfil do usuário com campos de edição e salvamento de foto usando HTML, CSS e JavaScript:-->
+<!DOCTYPE html>
+<html lang="en">
 
-<!--<!DOCTYPE html>-->
-
-<html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfil do Usuário</title>
   <style>
-    /* Estilos para o layout da página */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-    }
-    .profile-container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 2px solid #ccc;
-      border-radius: 5px;
-    }
-    .profile-picture {
-      text-align: center;
-    }
-    .profile-picture img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .edit-button {
-      margin-top: 10px;
-      text-align: center;
-    }
-    .edit-button input[type="file"] {
-      display: none;
-    }
-    .edit-button label {
-      cursor: pointer;
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
-    .save-button {
-        text-align:center
-        
-    }
- 
-    .save-button label{
-      cursor: pointer;
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      
-      
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
+    .profile-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+    }
+
+    .profile-picture {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .user-name {
+      font-size: 1.5em;
+      margin: 15px 0;
+    }
+
+    .edit-button,
+    .save-button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1em;
+    }
+
+    .edit-button:hover,
+    .save-button:hover {
+      background-color: #45a049;
+    }
+
+    .input-field {
+      display: none;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
   </style>
 </head>
+
 <body>
-  <h1>Perfil do Usuário</h1>
-  
+
   <div class="profile-container">
-    <div class="profile-picture">
-      <img id="profile-img" src="src/IconePerfil.png" alt="Perfil">
-      
-       <div class="edit-button">
-         <input type="file" id="img-upload" accept="image/*" onchange="previewImage(event)">
-         <label for="img-upload">Editar Foto</label>
-       </div>
-    </div>
-    <div class="save-button">
-      <br>
-        <button onclick="saveProfile()">Salvar</button>
-    </div>
-   
+    <img class="profile-picture" src="usuario.png" alt="Foto de Perfil">
+    <div class="user-name" id="userName">Seu Nome</div>
+
+    <button class="edit-button" onclick="editName()">Editar Nome</button>
+
+    <input type="text" class="input-field" id="editField" value="Seu Nome">
+
+    <button class="save-button" onclick="saveName()">Salvar Nome</button>
   </div>
 
   <script>
-    function previewImage(event) {
-      var reader = new FileReader();
-      reader.onload = function() {
-        var output = document.getElementById('profile-img');
-        output.src = reader.result;
-      }
-      reader.readAsDataURL(event.target.files[0]);
+    function editName() {
+      document.getElementById('userName').style.display = 'none';
+      document.getElementById('editField').style.display = 'block';
+      document.getElementById('editField').focus();
+      document.querySelector('.edit-button').style.display = 'none';
+      document.querySelector('.save-button').style.display = 'block';
     }
-    
-    function saveProfile() {
-        // Lógica para salvar o perfil do usuário
-        alert("Perfil salvo com sucesso!");
+
+    function saveName() {
+      var newName = document.getElementById('editField').value;
+      document.getElementById('userName').innerText = newName;
+      document.getElementById('userName').style.display = 'block';
+      document.getElementById('editField').style.display = 'none';
+      document.querySelector('.edit-button').style.display = 'block';
+      document.querySelector('.save-button').style.display = 'none';
     }
   </script>
+
 </body>
+
 </html>
-
-
-<!--Certifique-se de substituir "default-profile-picture.jpg" pelo caminho da imagem padrão que você deseja exibir inicialmente.-->
-   
-   
-   

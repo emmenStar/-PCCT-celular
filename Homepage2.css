@@ -241,6 +241,7 @@ input {
   align-items: flex-star;
   margin-top: 30px;
 
+
 }
 
 .card {
@@ -249,18 +250,14 @@ input {
   border-radius: 8px;
   padding: 20px;
   margin-right: 50px;
-  background: #9AD6CE;
-
 
 }
-
-
-
 
 .main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border-radius: 10px;
 
 
 }
@@ -284,25 +281,41 @@ main.cards section.card {
   border-radius: 10px;
   max-height: 468px;
   margin-left: 32px;
+  /*background-image: url(Dog\ lingua.jpg);*/
+
+
 
 }
 
 main.cards section.card:first-child {
   margin-left: 0;
+  background-image: url(Dog\ lingua.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
 }
 
 main.cards section.card .icon {
   width: 50px;
   height: 50px;
+
 }
 
 main.cards section.card img {
   width: 100%;
+  background-image: url(Dog\ lingua.jpg);
 }
+
+main.cards section.card shop {
+  width: 100%;
+  background-image: url(Dog\ lingua.jpg);
+}
+
 
 main.cards section.card h3 {
   font-size: 100%;
   margin: 16px 0;
+
 }
 
 main.cards section.card span {
@@ -323,6 +336,8 @@ main.cards section.card button {
   color: Black;
   margin-bottom: 16px 0;
 }
+
+
 
 main.cards section.card.contact button {
   background: linear-gradient(to right, #EBB14E, #EBB14E);
