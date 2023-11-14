@@ -288,7 +288,7 @@ main.cards section.card {
 
 main.cards section.card:first-child {
   margin-left: 0;
-  background-image: url(Dog_lingua.jpg);
+  background-image: url("Dog_lingua.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -302,7 +302,7 @@ main.cards section.card img {
 
 main.cards section.card shop {
   margin-left: 0;
-  background-image: url(Dog lingua.jpg);
+  background-image: url("Dog lingua.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -322,11 +322,11 @@ main.cards section.card span {
   font-weight: 300;
   max-width: 240px;
   font-size: 80%;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 main.cards section.card button {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   text-transform: uppercase;
   border-radius: 32px;
   border: 0;
@@ -356,21 +356,16 @@ main.cards section.card.contact {
 }
 
 main.cards section.card.shop {
-  box-shadow: 20px 20px 50px -30px #AFD6FF;
+  box-shadow: 20px 20px 50px -35px #AFD6FF;
 }
 
 main.cards section.card.about {
   box-shadow: 20px 20px 50px -30px #FFC1D5;
 }
 
-/*@media screen and (max-width: 720px) {
-  main.cards {
-    flex-direction: column;
-  }*/
-
 main.cards section.card {
   margin-left: 0;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 
 main.cards section.card:last-child {
@@ -378,10 +373,87 @@ main.cards section.card:last-child {
 }
 
 main.cards section.card button {
-  font-size: 70%;
+  font-size: 80%;
 }
 
+/*inicio da label*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  justify-items: auto;
+  /* Isso distribuirá os rótulos horizontalmente com espaço igual entre eles */
+}
 
+.label {
+  text-align: center;
+  margin: 60px;
+  /* Margem externa para o rótulo */
+  padding: 40px;
+  /* Preenchimento interno para o rótulo */
+  border: 2px solid #ccc;
+  /* Adiciona uma borda para destacar os rótulos (opcional) */
+}
+
+.label img {
+  width: 70%;
+  max-width: 100%;
+  /* Garante que a imagem não ultrapasse a largura do rótulo */
+  height: auto;
+  /* Mantém a proporção da imagem */
+}
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+
+  border: 2px solid #000;
+  background: #9AD6CE;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 20px;
+
+}
+
+/*rodapé*/
+
+footer {
+  background-color: #9AD6CE;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 10;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 
 
 
@@ -513,7 +585,3 @@ input:checked+.slide-container .nav label {
   cursor: pointer;
   background-color: #9AD6CE;
 }
-
-/*input#img-1:checked~.nav-dots label#img-dot-1,
-input#img-2:checked~.nav-dots label#img-dot-2,
-input#img-3:checked~.nav-dots label#img-dot-3,*/
