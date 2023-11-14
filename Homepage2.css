@@ -244,7 +244,7 @@ input {
 
 }
 
-.card {
+/*.card {
   width: 200px;
   border: 1px solid Black;
   border-radius: 8px;
@@ -374,7 +374,7 @@ main.cards section.card:last-child {
 
 main.cards section.card button {
   font-size: 80%;
-}
+}*/
 
 /*inicio da label*/
 .container {
